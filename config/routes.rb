@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root 'pages#home'
 # a new article path, a post, to create articles. a patch to edit articles,  edit, show, delete and index path. we get that from this one line
   resources :articles
+  resources :users
 
   get 'signup', to: 'users#new'
  post 'users', to: 'users#create'
